@@ -681,3 +681,18 @@ Binding(ALT+SHIFT+D R,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-04 14:40:58.533
 !MESSAGE executing callback sts4.classpath.FShYnTXr SUCCESS [終了しました]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-04 14:49:04.010
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FShYnTXr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-04 14:49:04.031
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FShYnTXr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-04 14:49:04.049
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-04 14:49:04.066
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FShYnTXr => OK
+
+!ENTRY org.eclipse.ui 2 2 2020-06-04 14:49:05.929
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

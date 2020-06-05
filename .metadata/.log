@@ -878,3 +878,18 @@ Binding(ALT+SHIFT+D R,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:36:28.498
 !MESSAGE executing callback sts4.classpath.sPvKAekQ SUCCESS [終了しました]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:38:09.050
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sPvKAekQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:38:09.122
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.sPvKAekQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:38:09.164
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:38:09.243
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sPvKAekQ => OK
+
+!ENTRY org.eclipse.ui 2 2 2020-06-05 16:38:12.053
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

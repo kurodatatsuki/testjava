@@ -1,0 +1,167 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		  Scanner sc = new Scanner(System.in);
+	        int X = sc.nextInt();//ピースの個数4
+	        int N = sc.nextInt();//パズルの大きさ4
+	        int M = sc.nextInt();//ピースの大きさ2
+	        String[][] C1 = new String[M][M];//完成系のピース形1
+	        String[][] C2 = new String[M][M];//完成系のピース形2
+	        String[][] C3 = new String[M][M];//完成系のピース形3
+	        String[][] C4 = new String[M][M];//完成系のピース形4
+
+
+	        //それぞれのピースに完成の模様を格納
+	        for(int i = 0; i < N; i++){
+	            String c = sc.next();
+	            String[] sp = c.split("");
+	            if(i < M){
+	                for(int j = 0; j < M; j++){
+	                    C1[i][j] = sp[j];
+	                }
+	                for(int n  = M; n < N; n++){
+	                    C2[i][n-M] = sp[n];
+	                }
+	            }else{
+	                for(int j = 0; j < M; j++){
+	                    C3[i-M][j] = sp[j];
+	                }
+	                for(int n  = M; n < N; n++){
+	                    C4[i-M][n-M] = sp[n];
+	                }
+	            }
+	        }
+
+
+
+
+
+
+	        //ピースの数だけ繰り返し
+	        for(int i = 0; i < X; i++){
+
+	            //使用するピースを格納
+	            String[][] P = new String[M][M];
+	            for(int j = 0; j < M; j++){
+	                String p = sc.next();
+	                String[] sp = p.split("");
+	                for(int n = 0; n < M; n++){
+	                    P[j][n] = sp[n];
+	                }
+	            }
+
+
+
+	            boolean flag = true;//ピースが合致するかの判定
+
+	            //ピースの回転数だけ繰り返し（４で固定）
+	            for(int k = 0; k < 4; k++){
+
+	                //正解となるピースと同じになるかを判定
+	                //左上の判定
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        if( !( C1[g][v].equals(P[g][v]) ) ){
+	                            flag =false;
+	                            break;
+	                        }
+	                    }
+	                    if(flag == false){
+	                        break;
+	                    }
+	                }
+
+	                if(flag == true){
+	                        System.out.println("1 1 " + k);
+	                        break;
+	                }
+
+
+	                //右上の判定
+	                flag = true;//判定をリセット
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        if( !( C2[g][v].equals(P[g][v]) ) ){
+	                            flag =false;
+	                            break;
+	                        }
+	                    }
+	                    if(flag == false){
+	                        break;
+	                    }
+	                }
+
+	                if(flag == true){
+	                        System.out.println("1 "+ (M+1) +" "+ k);
+	                        break;
+	                }
+
+
+	                //左下の判定
+	                flag = true;//判定をリセット
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        if( !( C3[g][v].equals(P[g][v]) ) ){
+	                            flag =false;
+	                            break;
+	                        }
+	                    }
+	                    if(flag == false){
+	                        break;
+	                    }
+	                }
+
+	                if(flag == true){
+	                        System.out.println((M+1) +" 1 "+ k);
+	                        break;
+	                }
+
+
+	                //右下の判定
+	                flag = true;//判定をリセット
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        if( !( C4[g][v].equals(P[g][v]) ) ){
+	                            flag =false;
+	                            break;
+	                        }
+	                    }
+	                    if(flag == false){
+	                        break;
+	                    }
+	                }
+
+	                if(flag == true){
+	                    System.out.println((M+1) +" "+(M+1)+" "+ k);
+	                    break;
+	                }
+
+
+	                //ピースの回転処理↓
+
+	                //ピース配列のコピー
+	                String[][] copy = new String [M][M];
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        copy[g][v] = P[g][v];
+
+	                    }
+	                }
+
+	                //配列の行と列を入れ替える
+	                for(int g = 0; g < M; g++){
+	                    for(int v = 0; v < M; v++){
+	                        P[g][v] = copy[(M-1)-v][g];
+	                    }
+	                }
+
+	            }
+	        //どれにも当てはまらなかった場合
+	                if(flag == false){
+	                    System.out.println(-1);
+	                }
+	        }
+	}
+
+}

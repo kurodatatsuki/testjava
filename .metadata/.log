@@ -556,3 +556,183 @@ java.lang.IllegalArgumentException: timeout value is negative
 !MESSAGE 含まれているリポジトリーが見つかりません: org.eclipse.update.feature,org.springframework.tooling.concourse.ls.feature,4.6.2.202005250744
 !SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-05 14:06:28.358
 !MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,org.springsource.ide.eclipse.commons.cloudfoundry.client.v2,3.9.13.202005241057-CI-B2488
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:29:44.489
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FFTrHbuR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:29:44.535
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FFTrHbuR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:29:44.553
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:29:44.575
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FFTrHbuR => OK
+
+!ENTRY org.eclipse.ui 2 2 2020-06-05 16:29:46.259
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2020-06-05 16:29:50.507 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.5
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-05 16:30:06.297
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-05 16:30:06.297
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e2525fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59d6a4d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:16.099
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:16.123
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@306cb0a0[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1031)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:16.152
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:16.250
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.jface 2 0 2020-06-05 16:30:21.012
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-05 16:30:21.012
+!MESSAGE CTRL+- の競合が発生しました:
+Binding(CTRL+-,
+	ParameterizedCommand(Command(org.eclipse.gef.zoom_out,ズームアウト,
+		ズームアウト,
+		Category(org.eclipse.gef.category.view,ビュー,ビュー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f532961,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+-,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.zoomOut,ズームアウト,
+		テキストのズーム・アウト - テキスト・エディターのデフォルト・フォント・サイズを小さくします,
+		Category(org.eclipse.ui.category.textEditor,テキスト編集,テキスト編集コマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a9d481b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+-,
+	ParameterizedCommand(Command(junit.extensions.eclipse.quick.pde.command.PDEJUnitRunAction,JUnit Plug-in テスト,
+		PDE JUnitでテストを実行します．,
+		Category(junit.extensions.eclipse.quick.command.category,Quick JUnit,Quick JUnitアクション,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@129e6f3a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-05 16:30:21.012
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,サーバーで実行,
+		サーバー上の現在の選択を実行,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1179e7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,RAP アプリケーションの実行,
+		RAP アプリケーションの実行,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@591f5945,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-05 16:30:21.012
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,サーバーでデバッグ,
+		サーバー上の現在の選択をデバッグ,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@79620fed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,RAP アプリケーションのデバッグ,
+		RAP アプリケーションのデバッグ,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18645844,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.352
+!MESSAGE Boot LS startup time from start to initialized: 18140ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.534
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DrZRFQoiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.700
+!MESSAGE subscribing to classpath changes: sts4.classpath.DrZRFQoi isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.777
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.826
+!MESSAGE subsribers = {sts4.classpath.DrZRFQoi=クラスパス通知の送信(105)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.851
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.869
+!MESSAGE project sukkiri-Java ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.881
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.895
+!MESSAGE Preparing classpath changed notification sukkiri-Java
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.910
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DrZRFQoi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.924
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:34.987
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:35.005
+!MESSAGE buffering callback sts4.classpath.DrZRFQoi sukkiri-Java false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:35.020
+!MESSAGE executing callback sts4.classpath.DrZRFQoi 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:30:35.079
+!MESSAGE executing callback sts4.classpath.DrZRFQoi SUCCESS [終了しました]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:32:08.300
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DrZRFQoi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:32:08.337
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DrZRFQoi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:32:08.365
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-05 16:32:08.400
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DrZRFQoi => OK
+
+!ENTRY org.eclipse.ui 2 2 2020-06-05 16:32:10.762
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
     <libraryInfo home="C:\Users\kurot\Downloads\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\java\11" version="11.0.5"/>
+    <libraryInfo home="C:\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\eclipse\jre" version="11.0.5"/>
     <libraryInfo home="C:\Users\kurot\Downloads\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\java\6" version="1.6.0_45">
         <bootpath>
             <entry path="C:\Users\kurot\Downloads\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\java\6\jre\lib\resources.jar"/>
@@ -58,5 +59,6 @@
             <entry path="C:\Users\kurot\Downloads\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\java\8\jre\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
+    <libraryInfo home="C:\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\eclipse" version="11.0.5"/>
     <libraryInfo home="C:\Users\kurot\Downloads\pleiades-2019-12-java-win-64bit-jre_20200213\pleiades\java\13" version="13.0.1"/>
 </libraryInfos>
